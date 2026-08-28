@@ -56,21 +56,25 @@ src/
 Follow these steps to get the project running on your own machine.
 
 ### Prerequisites
+
 Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 
 ### Installation
 
 1. **Navigate to the project folder:**
+
    ```bash
    cd "API Powered Search Dash Board"
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server:**
+
    ```bash
    npm run dev
    ```
@@ -82,21 +86,10 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 
 ## 🧠 How It Works (Behind the Scenes)
 
-1. **The Search Flow:** When a user types in the `SearchBar`, the text is sent up to `App.jsx`. 
+1. **The Search Flow:** When a user types in the `SearchBar`, the text is sent up to `App.jsx`.
 2. **The Delay:** Instead of fetching data immediately, the text is passed into `useDebounce`. This hook waits 500 milliseconds. If the user types another letter, the timer restarts.
 3. **The Fetch:** Once the user stops typing, `App.jsx` calls the `searchMeals` function inside `api.js`.
 4. **The Display:** The API returns a list of meals, which are passed to the `MealList` and rendered as `MealCards`.
 5. **The Deep Dive:** Clicking a card triggers the `MealModal`. It takes the meal's unique ID, does a second API call to `getMealDetails`, and maps over the data to display exactly how much of each ingredient you need!
 
 ---
-
-## 🔮 Future Enhancements
-
-If you want to take this project further, here are some great features to add:
-- **Filtering by Category:** Add a dropdown to only show "Vegetarian" or "Seafood" meals.
-- **Favorites List:** Let users click a heart icon to save recipes to `localStorage`.
-- **Pagination / Infinite Scroll:** If a search returns 100 meals, only load 10 at a time to speed up image rendering.
-
----
-
-*Built with ❤️ as a showcase of modern React development.*
