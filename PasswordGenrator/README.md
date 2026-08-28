@@ -4,6 +4,9 @@ A sleek, fast, and interactive Password Generator application built with **React
 
 ---
 
+Link for the Web app on Vercel
+[Link](swc-recruitment-7a9w-six.vercel.app)
+
 ## ✨ Features
 
 - **Customizable Length:** Easily adjust the password length from 6 to 100 characters using a convenient slider.
