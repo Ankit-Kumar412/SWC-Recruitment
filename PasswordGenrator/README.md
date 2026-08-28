@@ -1,16 +1,72 @@
-# React + Vite
+# 🔐 Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, fast, and interactive Password Generator application built with **React**, **Vite**, and **Tailwind CSS**. This tool helps you create strong, secure, and customizable passwords instantly.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Customizable Length:** Easily adjust the password length from 6 to 100 characters using a convenient slider.
+- **Include Numbers & Symbols:** Toggle options to include numbers (`0-9`) and special characters (e.g., `!@#$%^&*`) in your generated passwords.
+- **Real-time Generation:** The password updates automatically as you adjust the length or change the character options.
+- **One-Click Copy:** Easily copy the generated password to your clipboard with a single click.
+- **Modern UI:** A clean, dark-themed, and responsive user interface built with Tailwind CSS.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **[React](https://react.dev/):** Frontend library for building the user interface. Hooks like `useState`, `useEffect`, `useCallback`, and `useRef` are utilized for state management and performance optimization.
+- **[Vite](https://vitejs.dev/):** Next-generation frontend tooling for a fast development experience.
+- **[Tailwind CSS](https://tailwindcss.com/):** Utility-first CSS framework used for rapid and modern styling.
+
+---
+
+## 🚀 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+Make sure you have Node.js installed on your computer. You can download it from [Node.js official website](https://nodejs.org/).
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Ankit-Kumar412/SWC-Recruitment.git
+   ```
+
+   _(Note: Replace the URL if you have a different repository link)._
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd PasswordGenrator
+   ```
+
+3. **Install the dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the app in your browser:**
+   Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+---
+
+## 💡 How to Use
+
+1. **Set the Length:** Drag the slider to set your desired password length (between 6 and 100).
+2. **Select Preferences:** Check or uncheck the **"Numbers"** and **"Characters"** boxes depending on whether you want them included in your password.
+3. **Copy to Clipboard:** Click the **"Copy"** button next to the generated password to copy it to your clipboard for immediate use.
+
+---
