@@ -6,9 +6,8 @@ This project was built to demonstrate core React concepts, including state manag
 
 ---
 
-## Link for the Web app on Varcel
-
-[Link] (swc-recruitment-kyi7.vercel.app)
+Link for the Web app on Vercel
+[Link](https://swc-recruitment-kyi7.vercel.app)
 
 ## ✨ Features
 
