@@ -2,6 +2,9 @@
 
 A modern, responsive, and real-time Currency Converter built with React, Vite, and Tailwind CSS. This application allows users to seamlessly convert between various global currencies using live exchange rates.
 
+Link for the Web app on Vercel
+[Link](https://swc-recruitment-kyi7.vercel.app)
+
 ## ✨ Features
 
 - **Real-time Exchange Rates:** Fetches up-to-date currency conversion rates.
