@@ -55,6 +55,20 @@ The core logic resides in `src/App.jsx`. The application utilizes React hooks (`
 4.  The submissions are filtered by `verdict === 'OK'` (Accepted), and unique problem IDs are counted using a JavaScript `Set` to calculate the exact number of unique questions solved.
 5.  The final aggregated data is then pushed to the React state and rendered to the DOM.
 
-## 📝 License
+## 🔌 Codeforces API Usage
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project interacts with two primary endpoints from the official [Codeforces API](https://codeforces.com/apiHelp) to retrieve the necessary data. The API is public and does not require authentication for these endpoints.
+
+### 1. `user.ratedList`
+
+- **Endpoint:** `https://codeforces.com/api/user.ratedList?activeOnly=true`
+- **Purpose:** Fetches the global leaderboard of all rated users.
+- **Usage:** We use the `activeOnly=true` parameter to ensure we only get users who have participated in recent contests. The response is sorted by rating in descending order by default. We take the first 10 results to form our base list of the Top 10 coders.
+
+### 2. `user.status`
+
+- **Endpoint:** `https://codeforces.com/api/user.status?handle={user_handle}`
+- **Purpose:** Fetches the complete submission history for a specific user.
+- **Usage:** For each of the top 10 users, we make an individual call to this endpoint using their `handle` (e.g., `tourist`). We iterate through the returned array of submissions, filtering for those where `verdict === 'OK'` (meaning the problem was solved successfully). To ensure we count the _unique_ number of problems solved (since a user might submit multiple correct answers for the same problem), we combine `contestId` and `index` to create a unique problem ID and store it in a JavaScript `Set`.
+
+> **Note:** Codeforces allows cross-origin requests (CORS), which makes it possible to fetch this data directly from the frontend React application without needing a backend proxy server.
